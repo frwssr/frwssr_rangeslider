@@ -24,6 +24,7 @@ In a perch template, you can use this field type as follows:
 ```html
 <perch:content id="range" type="frwssr_rangeslider" label="Range" min="0" max="13" from="1" to="4" step="1">
 ```
+![What the range slide may look like in Perch Admin](screenshot.png)
 
 ### Notes
 - All attributes accept integers and floats. Just make sure, that the type is the same on every attribute. Otherwise the slider might break.

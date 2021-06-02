@@ -1,5 +1,5 @@
 # FEUERWASSER RangeSlider (frwssr_rangeslider)
-A field type for displaying an **Ion.RangeSlider**-powered range slider (well,…of course 😋) in [PerchCMS](https://grabaperch.com/).  
+A field type for displaying an *Ion.RangeSlider*-powered range slider (well,…of course 😋) in [PerchCMS](https://grabaperch.com/).  
 
 ## Installation
 
@@ -29,13 +29,13 @@ In a perch template, you can use this field type as follows:
 - All attributes accept integers and floats. Just make sure, that the type is the same on every attribute. Otherwise the slider might break.
 - Even, if lower and upper value are both set to the lower boundary, a value will be assigned to the input field. If you do not wish the value to show in that case, wrap the field in a `perch:if` statement like so (making sure, the value in it is set to your `min` in the format `{value};{value}`):  
 `<perch:if id="range" match="neq" value="0;0"><perch:content id="range" type="frwssr_rangeslider" label="Range" min="0" max="13" from="1" to="4" step="1"></perch:if>`
-- Only a subset of the **Ion.RangeSlider** plugin’s settings are supported by this fieldtype. Reach out to me, if you need more functionality.
+- Only a subset of the *Ion.RangeSlider* plugin’s settings are supported by this fieldtype. Reach out to me, if you need more functionality.
 - This fieldtype was developed under Perch (Standard) Version 3.2 on a server running PHP 7.4.x.  
 **Use at own risk!**
 
 
 # Credits
-This project makes use of the fantastic **Ion.RangeSlider** plugin from [Denis Ineshin](https://twitter.com/IonDen666). For more details and licence info, please visit the plugin website at [http://ionden.com/a/plugins/ion.rangeSlider/](http://ionden.com/a/plugins/ion.rangeSlider/).
+This project makes use of the fantastic *Ion.RangeSlider* plugin from [Denis Ineshin](https://twitter.com/IonDen666). For more details and licence info, please visit the plugin website at [http://ionden.com/a/plugins/ion.rangeSlider/](http://ionden.com/a/plugins/ion.rangeSlider/).
 
 # License
 This project is free, open source, and GPL friendly. You can use it for commercial projects, for open source projects, or for almost whatever you want, really.

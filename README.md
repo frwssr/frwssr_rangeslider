@@ -22,7 +22,7 @@ In a perch template, you can use this field type as follows:
 
 ### Example
 ```html
-<perch:content id="range" type="frwssr_rangeslider" label="Range" min="0" max="13" from="1" to="4" step="1">
+<perch:content id="range" type="frwssr_rangeslider" label="Range" min="0" max="10" from="1" to="5" step="1">
 ```
 ![What the range slide may look like in Perch Admin](screenshot.png)
 

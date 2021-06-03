@@ -19,12 +19,17 @@ In a perch template, you can use this field type as follows:
 - *from* - Set the initial lower value of the slider. Defaults to `4`.
 - *to* - Set the initial upper value of the slider. Defaults to `6`.
 - *step* - Set the steps of the slider. Defaults to `1`.
+- *separator* - Specify the separating character between the values. Defaults to `-`.
 
 ### Example
 ```html
-<perch:content id="range" type="frwssr_rangeslider" label="Range" min="0" max="10" from="1" to="5" step="1">
+<perch:content id="range" type="frwssr_rangeslider" label="Range" min="0" max="10" from="1" to="5" step="1" separator="–">
 ```
 ![What the range slide may look like in Perch Admin](screenshot.png)
+To manipulate the output, you can use Perch’s native `replace` and `append` attributes like so:
+```html
+<perch:content id="range" replace="-|&nbsp;to&nbsp;" append=" meters">
+```
 
 ### Notes
 - All attributes accept integers and floats. Just make sure, that the type is the same on every attribute. Otherwise the slider might break.
